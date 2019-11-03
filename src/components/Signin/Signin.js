@@ -17,8 +17,8 @@ class Signin extends React.Component {
     this.setState({signInPassword: event.target.value})
   }
 
-  onSubmitSignIn = () => {
-    fetch('http://localhost:3000/signin', {
+  onSubmitSignIn = () => { 
+    fetch('https://smart-brain-server-aw.herokuapp.com/signin', {  //  http://localhost:3000/signin
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
